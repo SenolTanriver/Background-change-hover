@@ -1,0 +1,52 @@
+﻿@import "../../Base/Global.scss";
+@import "../../Base/Colour.scss";
+
+
+/* Common xs1, xs2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+
+
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .section-01 {
+        .conteiner{
+            margin-top: 50px;
+            margin-left: 250px;
+            width: 1050px;
+            height: 600px;
+            background-image: url(/Content/images/maps.jpg);
+            background-size: cover;
+
+
+            ul{
+                display: inline-block;
+                padding-top: 60px;
+                padding-left: 30px;
+
+                li {
+                    color: red;
+                    cursor: pointer;
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+
+                li:hover {
+                    font-size: 30px;
+                    background-color: white;
+                    border-radius: 13px;
+                    transition: 0.6s;
+                }
+
+            }
+        }
+
+       
+
+    }
+}
